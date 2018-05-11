@@ -1,0 +1,8 @@
+Scenario: Create swimmer
+Actor: Chairman
+
+1. Chairman wants to create a new swimmer
+2. System asks for swimmer name and age
+3. System asks if the swimmer are exerciser or competitive
+4. System calculates the swimmers subscribtion
+5. System creates the new swimmer in the system

@@ -18,7 +18,7 @@ public class Dolphin{
       System.out.println("0. Exit");
       System.out.println("1. Register member");
       System.out.println("2. Members");
-      System.out.println("3. ");
+      System.out.println("3. Member subscribtion");
       
       Scanner scan = new Scanner(System.in);
             int option = scan.nextInt();
@@ -71,9 +71,14 @@ public class Dolphin{
                   System.out.println("Invalid input. Type 1 for exerciser or 2 for competitive");
                   }
                   }
+                  
                   memberShip.add(member1);
                   break;
                case 2 :
+                  break;
+               
+               case 3 :
+               
 
      
      

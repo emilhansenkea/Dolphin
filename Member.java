@@ -66,5 +66,14 @@ public class Member{
       return subscribtion;
    }
    
-
+   public void memberSubscribtion(){
+   if (activity.equals("Passive")){
+   subscribtion = "500";
+   }else if (age < 18){
+   subscribtion = "1000";
+   }else if (18 <= age && age > 60){
+   subscribtion = "1600";
+   }else{ subscribtion = "1200";
+   }
+   }
 }

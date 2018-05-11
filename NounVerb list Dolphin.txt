@@ -1,0 +1,17 @@
+Noub list:
+
+Chairman
+Swimmer
+Name
+Age
+System
+Subscribtion
+
+
+Verb list:
+
+Create
+Wants
+Asks
+Calculates
+Creates
