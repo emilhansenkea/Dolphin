@@ -9,7 +9,7 @@ public class Dolphin{
    
     Scanner scanner = new Scanner(System.in);
    
-      System.out.println("Welcome to movie application\n");
+      System.out.println("Welcome to Dolphin swimclub\n");
    
       boolean loop1running = true;
       while (loop1running){
@@ -62,10 +62,10 @@ public class Dolphin{
                   while (loop3running){
                   int scanSwimType = scan2.nextInt();
                   if(scanSwimType == 1){
-                  member1.setActivity("Exerciser");
+                  member1.setSwimType("Exerciser");
                   loop3running = false;
                   }else if(scanSwimType ==2){
-                  member1.setActivity("Competitive");
+                  member1.setSwimType("Competitive");
                   loop3running = false;
                   }else{
                   System.out.println("Invalid input. Type 1 for exerciser or 2 for competitive");
@@ -73,11 +73,22 @@ public class Dolphin{
                   }
                   
                   memberShip.add(member1);
+                  System.out.println("Member is now created with the name " + member1.getName() + ". Your subscribtion is " + member1.getSubscribtion());
                   break;
                case 2 :
+                   System.out.println("List of members:\n");
+                   for (Member ms : memberShip){
+                     System.out.println("Name: " + ms.getName() + ", Age: " + ms.getAge() + ", Activity: " + ms.getActivity() + ", SwimType: " + ms.getSwimType());
+                   
+                   }
+
                   break;
-               
                case 3 :
+                  for (Member ns : memberShip){
+                     System.out.println("Name: " + ns.getName() + ", Subscribtion: " + ns.getSubscribtion());
+                  }
+                  break;
+                  
                
 
      

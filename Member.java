@@ -9,6 +9,7 @@ public class Member{
    private String swimType;
    private String subscribtion;
    
+   
    //Her konstruerer vi objektet - en contructor
    public Member(String name, int age, String activity, String ageGroup, String swipType, String subscribtion){
       this.name = name;
@@ -17,6 +18,7 @@ public class Member{
       this.ageGroup = ageGroup;
       this.swimType = swimType;
       this.subscribtion = subscribtion;
+      
    }
    
    public Member(){}
@@ -39,6 +41,7 @@ public class Member{
    }
    public void setActivity (String activity){
       this.activity = activity;
+      memberSubscribtion();
       
    }
    public String getActivity(){
@@ -58,7 +61,7 @@ public class Member{
    public String getSwimType(){
       return swimType;
    }
-   public void setSubscribtione (String subscribtion){
+   public void setSubscribtion (String subscribtion){
       this.subscribtion = subscribtion;
       
    }
@@ -75,5 +78,8 @@ public class Member{
    subscribtion = "1600";
    }else{ subscribtion = "1200";
    }
+      
    }
+   
+ 
 }
